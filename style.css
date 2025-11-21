@@ -1,0 +1,164 @@
+/* ------------------------------
+   BASIC RESET & GLOBAL STYLES
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+  padding: 20px;
+}
+
+/* ------------------------------
+   PAGE LAYOUT
+------------------------------ */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+h1, h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+/* ------------------------------
+   PRODUCT GRID
+------------------------------ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #fafafa;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+/* Price */
+.price {
+  font-weight: bold;
+  color: #005bbb;
+  font-size: 17px;
+  margin-top: 6px;
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #005bbb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #003f88;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #c62828;
+}
+
+.delete-btn:hover {
+  background: #a31616;
+}
+
+/* ------------------------------
+   FORMS (ADD PRODUCT / EDIT)
+------------------------------ */
+.form-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  margin-bottom: 25px;
+}
+
+.form-box label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-box textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+/* Optional URL override input */
+.image-url-input {
+  margin-top: 8px;
+  border-color: #0077cc;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+}
